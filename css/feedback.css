@@ -1,0 +1,12 @@
+#feedback-form{
+    background-image: url("../assets/images/background/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#feedback-form h1{
+    border-bottom: 2px solid red;
+    color: white;
+}

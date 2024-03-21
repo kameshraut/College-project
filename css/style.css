@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --main-color: #ef233c;
+}
+
+
+/* navbar styling start  */
+#navbar{
+    background-color: transparent !important;
+    backdrop-filter: blur(10px);
+}
+
+#navbar img {
+    width: 50px;
+}
+
+#navbar a {
+    font-size: large;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 10px;
+    display: block;
+}
+
+#navbar ul li a+a {
+    margin-left: 16px;
+}
+
+#navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: cyan;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+
+#navbar ul a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+#navbar a:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+/* navbar styling end  */
+
+/* hero section styling start  */
+#hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../assets/images/college/DSC_1643.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+.hero-content {
+    margin: 14rem 0 !important;
+}
+
+#hero button {
+    padding: 5px 10px;
+}
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    display: inline-block;
+    color: var(--main-color);
+}
+
+.typing-effect::after {
+    content: '|';
+    color: var(--dark-color);
+    animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0;
+    }
+}
+
+#hero button:active {
+    transform: translateY(5px);
+}
+
+#hero .first-button {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+#hero .second-button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+/* hero section styling end  */
+
+/* course form styling start  */
+#course-form {
+    background-image: url("../assets/images/background/Pin\ by\ Fatima\ on\ دوده\ in\ 2022\ _\ Medical\ background\,\ Bullet\ journal\ stickers\,\ Room.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+#course-form button {
+    width: 100%;
+    background-color: #2b2d42;
+    border: 2px solid #2b2d42;
+}
+
+/* course form styling end  */
+
+/* about section styling start  */
+#about h1 {
+    display: inline-block;
+    border-bottom: 2px solid red;
+}
+
+#about h4 {
+    display: inline-block;
+    border-bottom: 3px solid cyan;
+}
+
+#about a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: cyan;
+    padding: 10px 25px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+#about a:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 19px cyan,
+        0 0 68px cyan,
+        0 0 86px cyan;
+}
+
+/* about section styling end  */
+
+/* contact section styling start  */
+#contact h1{
+    border-bottom: 2px solid red;
+}
+/* contact section styling end  */
+
+/* footer styling start  */
+footer>section:nth-child(1) {
+    background-color: var(--main-color) !important;
+}
+
+footer hr {
+    width: 60px;
+    background-color: var(--main-color);
+    height: 3px;
+    opacity: 1;
+    border: none;
+}
+
+.icons a {
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    padding: 10px;
+    /* background-color: black; */
+}
+
+.icons a:hover {
+    color: cyan !important;
+}
+
+/* footer styling end  */

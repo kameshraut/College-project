@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration & Student Survey</title>
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#" title="Logo">
+                <img class="logo" src="assets/images/logo/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon" id="toogler"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item underline">
+                        <a class="nav-link text-center" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="#about">About</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="Service.html#service-fee">Services</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="Service.html">Courses</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+    
+    <!-- hero section start  -->
+    <div class="container-fluid" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 col-xxl-5 hero-content">
+                    <h2>Making Best Future</h2>
+                    <h1 class="typing-effect text-uppercase" id="typing-element"></h1>
+                    <p>We provide always our best service for our student and always
+                        try to achieve making a bright successfull future.</p>
+                    <a href="StudentFeedback.html"><button class="first-button">Give Feedback</button></a>
+                    <a href="#course-form"><button class="second-button ms-3">Register Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero section end  -->
+
+    <!-- Courses form section start  -->
+    <div class="container-fluid my-4" id="course-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-3">
+                    <h1 class="text-center">Choose Your Course</h1>
+                </div>
+                <form class="pb-5" name="DetailsForm" action="" method="post" id="DetailsForm">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg">
+                            <label for="email"></label>
+                            <input type="email" name="Email" id="email" placeholder="Email" class="form-control"
+                                inputmode="email">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg">
+                            <label for="phone"></label>
+                            <input type="number" name="Phone" id="phone" placeholder="Phone" class="form-control"
+                                inputmode="tel">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg">
+                            <label for="DOB"></label>
+                            <input type="text" name="Dob" id="DOB" placeholder="Date of Birth" value="Date of Birth"
+                                onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg">
+                            <label for="select_course"></label>
+                            <select name="Field of interest" class="form-control text-center">
+                                <option value="- Select Courses -">- Select Courses -</option>
+                                <option value="Computer science and engineering">Computer science and engineering
+                                </option>
+                                <option value="Mechnical engineering">Mechnical engineering</option>
+                                <option value="Civil engineering">Civil engineering</option>
+                                <option value="Automobile engineering">Automobile engineering</option>
+                                <option value="Electronics & Communication engineering">Electronics & Communication
+                                    engineering
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-12 pt-3 col-lg mt-2">
+                            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Courses form section end  -->
+
+    <!-- about section start  -->
+    <div class="container-fluid" id="about">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 text-center mb-4">
+                    <h1 class="text-center">About Us</h1>
+                </div>
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <img src="assets/images/college/DSC_1643.JPG" class="img-thumbnail rounded p-4" alt="College image">
+                </div>
+                <div class="col-12 col-lg-6 pt-4 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <div class="text-center pb-2">
+                        <h4 class="text-center">AITRC Chhindwara</h4>
+                    </div>
+                    <p class="mb-3">
+                        AITRC is One of the INDIA's emerging technological institutions, AITRC is a vibrant, connected
+                        community that is home to diverse, ambitious, and creative students. It offers an incredible
+                        array of academic programs; a diverse, committed, and accessible faculty; sophisticated
+                        facilities; and an unusual emphasis in experiential learning.
+                    </p>
+                    <p class="mb-3">Welcome to Annie Institute Of Technology & Research Centre - [AITRC], Chhindwara We
+                        are dedicated
+                        to fostering a better educational experience for students, institutions, and educators alike.
+                        Our mission is to bridge the gap between colleges and their students, providing a platform for
+                        feedback and insights that can drive positive change within educational institutions.</p>
+                    <p class="mb-3">AITRC is in collaboration with Google to provide Online classes to AITRC students.
+                        With Google
+                        classroom, faculty can create online classes, distribute assignments, grade and send feedbak,
+                        and see everything in one place.</p>
+                    <div class="text-center">
+                        <a class="text-center"
+                            href="https://collegedunia.com/college/57969-annie-institute-of-technology-and-research-centre-aitrc-chhindwara">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section end  -->
+
+    <!-- contact section start  -->
+    <div class="container-fluid" id="contact">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-12 mb-4 d-flex justify-content-center">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="col-12 col-lg-6 py-2 py-lg-4">
+                    <p>
+                        At AITRC Chhindwara, we value open communication and are committed to providing excellent
+                        support to our students, faculty, staff, and community members.
+                    </p>
+                    <p>
+                        We understand that effective communication is essential for fostering a positive learning
+                        environment and ensuring the success of our community. Whether you have questions, concerns, or
+                        feedback, we are here to help. Please feel free to reach out to us using any of the following
+                        methods:
+                    </p>
+                    <p>
+                    <h5>For General Inquiries:</h5>
+                    <p>Email : <a href="mailto:admissions@aitrc.edu.in"> admissions@aitrc.edu.in</a></p>
+                    <p>Phone : <a href="tel:+919294710266">+91 9294710266</a></p>
+                    <p>Address : <a href="tel:+919294710267">+91 9294710267</a></p>
+                    </p>
+                    <p>
+                        Thank you for choosing Annie Institute Of Technology & Research Centre Chhindwara. We look
+                        forward to assisting you and providing
+                        you with the support you need to succeed in your educational journey.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="ratio ratio-4x3">
+                        <iframe class="rounded-2 p-4"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1225.906938454211!2d78.89914071419604!3d22.00490508990526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd56f1dc917b659%3A0x9a6b073dbeb44d4f!2sAnnie%20Institute%20of%20Technology%20%26%20Research%20Centre%2C%20Chhindwara!5e1!3m2!1sen!2sin!4v1709542572662!5m2!1sen!2sin"
+                            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section end  -->
+
+    <!-- footer section start  -->
+    <div class="mt-5">
+        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+            <section class="d-flex justify-content-between p-4 text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 my-3">
+                            <span>Get connected with us on social networks:</span>
+                        </div>
+                        <div class="col-12 col-md-6 my-3 text-center icons">
+                            <a href="https://www.twitter.com" class="me-1 me-sm-4"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.google.com" class="me-1 me-sm-4"><i
+                                    class="fa-brands fa-google"></i></a>
+                            <a href="https://www.instagram.com" class="me-1 me-sm-4"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkdin.com" class="me-1 me-sm-4"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h5 class="text-uppercase fw-bold">AITRC Chhindwara</h5>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+                            <p>
+                                At Annie Institute Of Technology & Research Centre - [AITRC], Chhindwara, we are
+                                committed to protecting the privacy of our users.
+                                This Privacy Policy outlines how we collect, use, and safeguard your personal
+                                information when you visit our website or interact with our services.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h5 class="text-uppercase fw-bold">Our Courses</h5>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+                            <p>
+                                <a href="Service.html" class="text-dark">Computer Science Engineering</a>
+                            </p>
+                            <p>
+                                <a href="Service.html" class="text-dark">Mechnical Engineering</a>
+                            </p>
+                            <p>
+                                <a href="Service.html" class="text-dark">Civil Engineering</a>
+                            </p>
+                            <p>
+                                <a href="Service.html" class="text-dark">Automobile Engineering</a>
+                            </p>
+                            <p>
+                                <a href="Service.html" class="text-dark">Electronics & Communication Engineering</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h5 class="text-uppercase fw-bold">Contact</h5>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" />
+                            <p>Khairwara Road, Near hawai patty, Betul Road, Chhindwara MP</p>
+                            <p><a href="mailto:admissions@aitrc.edu.in" class="text-dark"> admissions@aitrc.edu.in</a>
+                            </p>
+                            <p><a href="tel:+919294710266" class="text-dark">+91 9294710266</a></p>
+                            <p><a href="tel:+919294710267" class="text-dark">+91 9294710267</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2024 Copyright: Kamesh Raut
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- footer section end  -->
+
+    <script src="js/StudentDetails_handling.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-sm sticky-top bg-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html" title="Logo">
+                <img class="logo" src="assets/images/logo/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon" id="toogler"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item underline">
+                        <a class="nav-link text-center" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="Index.html#about">About</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="Service.html#service-fee">Services</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="Service.html">Courses</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-center" href="Index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <div class="container-fluid" id="feedback-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center pt-5">
+                    <h1>Student Feedback Form</h1>
+                </div>
+                <div class="col-12 col-lg-8 mx-auto my-5">
+                    <form name="FeedbackForm" action="" method="post" id="FeedbackForm" >
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="name" class="form-label">Name*</label>
+                                <input type="text" class="form-control" name="Name" id="name" placeholder="Enter your full name">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="email" class="form-label">Email address*</label>
+                                <input type="email" class="form-control" name="Email" id="email" placeholder="Enter your E-mail">
+                                <div id="email">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <label for="class" class="form-label">Class*</label>
+                                <input type="text" class="form-control" name="Class" id="class" placeholder="Enter your class">
+                            </div>
+                            <div class="col-12 col-lg-6 mb-4">
+                                <label for="course" class="form-label">Course*</label>
+                                <input type="text" class="form-control" name="Course" id="course" placeholder="Enter you branch">
+                            </div>
+                            <div class="col-12 mb-4 d-flex">
+                                <div class="me-sm-5">
+                                    Do you feel focused in your class*
+                                </div>
+                                <div class="btn-group mb-3 col-3" role="group"
+                                    aria-label="Basic radio toggle button group">
+
+                                    <input type="radio" class="btn-check" name="Feel focused in class" id="btnradio1"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
+
+                                    <input type="radio" class="btn-check" name="feel focused in class" id="btnradio2"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio2">No</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4 d-flex">
+                                <div class="me-sm-5">
+                                    Do you feel this month's learning was exciting?*
+                                </div>
+                                <div class="btn-group mb-3 col-3" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="Learning was exciting" id="months"
+                                        autocomplete="off" value="Yes" checked>
+                                    <label class="btn btn-outline-primary" for="months">Yes</label>
+
+                                    <input type="radio" class="btn-check" name="learning was exciting" id="months2"
+                                       value="No" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="months2">No</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="" class="mb-1">How would you rate the accessibility of faculty members
+                                    outside of class hours?</label>
+                                <select class="form-select text-center" name="Rating">
+                                    <option selected disabled>-- Select Your Choise --</option>
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Poor">Poor</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="" class="mb-1">Do you feel comfortable approaching faculty members with
+                                    questions or concerns?</label>
+                                <select class="form-select text-center" name="Feel comfortable approaching faculty members">
+                                    <option selected disabled>-- Select Your Choise --</option>
+                                    <option value="Yes, always">Yes, always</option>
+                                    <option value="Most of the time">Most of the time</option>
+                                    <option value="Sometimes">Sometimes</option>
+                                    <option value="Rarely/never">Rarely/never</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="" class="mb-1">How responsive are faculty members to emails and other forms
+                                    of communication?</label>
+                                <select class="form-select text-center" name="How responsive are faculty">
+                                    <option selected disabled>-- Select Your Choise --</option>
+                                    <option value="Very responsive">Very responsive</option>
+                                    <option value="Somewhat responsive">Somewhat responsive</option>
+                                    <option value="Occasionally responsive">Occasionally responsive</option>
+                                    <option value="Not responsive at all">Not responsive at all</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="" class="mb-1">How would you rate the effectiveness of faculty members in
+                                    delivering course content?</label>
+                                <select class="form-select text-center" name="Rate the effectiveness of faculty">
+                                    <option selected disabled>-- Select Your Choise --</option>
+                                    <option value="Very effective">Very effective</option>
+                                    <option value="Effective">Effective</option>
+                                    <option value="Somewhat effective">Somewhat effective</option>
+                                    <option value="Ineffective">Ineffective</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="" class="mb-1">Do faculty members encourage student participation and
+                                    engagement in class discussions?</label>
+                                <select class="form-select text-center" name="Faculty members encourage student">
+                                    <option selected disabled>-- Select Your Choise --</option>
+                                    <option value="Always">Always</option>
+                                    <option value="Often">Often</option>
+                                    <option value="Occasionally">Occasionally</option>
+                                    <option value="Rarely/never">Rarely/never</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="" class="mb-1">How well do faculty members incorporate real-world examples
+                                    and applications into their teaching?</label>
+                                <select class="form-select text-center" name="Faculty members incorporate real-world examples">
+                                    <option selected disabled>-- Select Your Choise --</option>
+                                    <option value="Very well">Very well</option>
+                                    <option value="Well">Well</option>
+                                    <option value="Somewhat well">Somewhat well</option>
+                                    <option value="Not well at all">Not well at all</option>
+                                </select>
+                            </div>
+
+
+
+
+
+                            <!-- <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div> -->
+                            <button type="submit" id="FeedbackFormSubmit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    ,<Script src="js/feedback_handling.js"></Script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
